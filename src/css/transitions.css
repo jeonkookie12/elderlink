@@ -1,0 +1,128 @@
+/* Event and Activities Page*/
+body {
+  background-color: #08732B;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0.95) translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes float-down {
+
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes scale-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+@keyframes float-up {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-60px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes zoom-in-fade {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+  }
+  
+  .animate-scale-in {
+    animation: scale-in 0.8s ease-out forwards;
+  }
+
+  .animate-float-down {
+    animation: float-down 0.6s ease-out both;
+  }
+  
+  .animate-pop-up {
+    animation: pop-up 0.6s ease-out forwards;
+  }
+  
+  .animate-float-up {
+    animation: float-up 1s ease-out forwards;
+  }
+  
+  .animate-slide-in-left {
+    animation: slide-in-left 1s ease-out forwards;
+  }
+  
+  .animate-slide-in-up {
+    animation: slide-in-up 1s ease-out forwards;
+  }
+  
+  .animate-zoom-in-fade {
+    animation: zoom-in-fade 1s ease-out forwards;
+  }
+  
+  .animate-fade-in2 {
+    animation: fade-in 0.3s ease-out forwards;
+  }

@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+
+/* Modal Animation (About Us) */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.3s ease-out forwards;
+  }
+  
+
+  /* User Icon Dashboard Animation */
+  @keyframes bounceSoft {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+  .group:hover .group-hover\:animate-bounce-soft {
+    animation: bounceSoft 1s infinite;
+  }
+  .group:hover .group-hover\:drop-shadow-glow {
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.7));
+  }
+  
+  /* Top Section Animation (User) */
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out both;
+  }
+  
+
+  /* Spinner Style (Loading) */
+  .loader {
+    width: 60px;
+    height: 60px;
+    border: 10px solid #1cd42550;
+    border-top-color: #1cd425;
+    animation: spin013151 1s linear infinite;
+    border-radius: 100%;
+  }
+
+@keyframes spin013151 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sidebar-icon img {
+  filter: invert(1) brightness(2);
+}
+
+
+
+/* User Profile Modal */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes checkmark {
+  0% { transform: scale(0); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@keyframes progress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-checkmark {
+  animation: checkmark 0.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+}
+
+.animate-progress {
+  animation: progress 3s linear forwards;
+}
+
+/* Sending OTP Modal */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-checkmark {
+  animation: checkmark 0.5s ease-in-out;
+}
+
+@keyframes checkmark {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+.no-borders-export * {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
